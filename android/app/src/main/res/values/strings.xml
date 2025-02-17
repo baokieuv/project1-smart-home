@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Home</string>
+    <string name="image_led">image_led</string>
+    <string name="image_door">image_door</string>
+    <string name="togglebutton">ToggleButton</string>
+    <string name="auto">Auto</string>
+    <string name="normal">Normal</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="description">Description</string>
+    <string name="pin_number">Pin Number</string>
+    <string name="device">Device</string>
+    <string name="enter_device_s_description">Enter device\'s description</string>
+
+    <string-array name="Devices">
+        <item>Led</item>
+        <item>Fan</item>
+        <item>Door</item>
+    </string-array>
+
+    <string-array name="PinNumbers">
+        <item>PA0</item>
+        <item>PA1</item>
+        <item>PA2</item>
+        <item>PA3</item>
+        <item>PA6</item>
+        <item>PA7</item>
+        <item>PA8</item>
+        <item>PA9</item>
+        <item>PA10</item>
+        <item>PA11</item>
+        <item>PB0</item>
+        <item>PB1</item>
+    </string-array>
+</resources>

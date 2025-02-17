@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/welcomeFragment">
+
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.example.project1_stage2.fragment.WelcomeFragment"
+        android:label="WelcomeFragment" >
+        <action
+            android:id="@+id/action_welcomeFragment_to_doorFragment"
+            app:destination="@id/doorFragment" />
+        <action
+            android:id="@+id/action_welcomeFragment_to_fanFragment"
+            app:destination="@id/fanFragment" />
+        <action
+            android:id="@+id/action_welcomeFragment_to_ledFragment"
+            app:destination="@id/ledFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ledFragment"
+        android:name="com.example.project1_stage2.fragment.LedFragment"
+        android:label="fragment_led"
+        tools:layout="@layout/fragment_led" >
+        <action
+            android:id="@+id/action_ledFragment_to_addDeviceFragment"
+            app:destination="@id/addDeviceFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/doorFragment"
+        android:name="com.example.project1_stage2.fragment.DoorFragment"
+        android:label="fragment_door"
+        tools:layout="@layout/fragment_door" >
+        <action
+            android:id="@+id/action_doorFragment_to_addDeviceFragment"
+            app:destination="@id/addDeviceFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fanFragment"
+        android:name="com.example.project1_stage2.fragment.FanFragment"
+        android:label="fragment_fan"
+        tools:layout="@layout/fragment_fan" >
+        <action
+            android:id="@+id/action_fanFragment_to_addDeviceFragment"
+            app:destination="@id/addDeviceFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addDeviceFragment"
+        android:name="com.example.project1_stage2.fragment.AddDeviceFragment"
+        android:label="fragment_add_device"
+        tools:layout="@layout/fragment_add_device" />
+</navigation>
